@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>How to import to Anki from CSV file？ | Jack&#39;s Blog</title>
+    <meta name="description" content=" ">
+    <meta name="generator" content="VuePress 1.3.1">
+    <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/github-markdown-css/2.2.1/github-markdown.css">
+    
+    <link rel="preload" href="/assets/css/0.styles.d4e4a38f.css" as="style"><link rel="preload" href="/assets/js/app.aef505b2.js" as="script"><link rel="preload" href="/assets/js/3.dbd3da8d.js" as="script"><link rel="preload" href="/assets/js/42.8c852756.js" as="script"><link rel="preload" href="/assets/js/6.a17fb6d6.js" as="script"><link rel="preload" href="/assets/js/7.eae8a930.js" as="script"><link rel="prefetch" href="/assets/js/10.2de90f98.js"><link rel="prefetch" href="/assets/js/100.b7dd9a80.js"><link rel="prefetch" href="/assets/js/101.0f47485c.js"><link rel="prefetch" href="/assets/js/102.7146a69c.js"><link rel="prefetch" href="/assets/js/103.6d5e2b0b.js"><link rel="prefetch" href="/assets/js/104.9194288d.js"><link rel="prefetch" href="/assets/js/105.84f699d0.js"><link rel="prefetch" href="/assets/js/106.8507fccc.js"><link rel="prefetch" href="/assets/js/107.aca9c52c.js"><link rel="prefetch" href="/assets/js/108.9e860b75.js"><link rel="prefetch" href="/assets/js/109.c18312a7.js"><link rel="prefetch" href="/assets/js/11.3e4275c0.js"><link rel="prefetch" href="/assets/js/110.dced683c.js"><link rel="prefetch" href="/assets/js/111.e1037020.js"><link rel="prefetch" href="/assets/js/112.fc6f9a48.js"><link rel="prefetch" href="/assets/js/113.241eaf0c.js"><link rel="prefetch" href="/assets/js/114.928668b7.js"><link rel="prefetch" href="/assets/js/115.7ea18f56.js"><link rel="prefetch" href="/assets/js/116.cc16a4e4.js"><link rel="prefetch" href="/assets/js/117.e283475a.js"><link rel="prefetch" href="/assets/js/118.c67c5853.js"><link rel="prefetch" href="/assets/js/119.7f136d58.js"><link rel="prefetch" href="/assets/js/12.e0af2809.js"><link rel="prefetch" href="/assets/js/120.99998981.js"><link rel="prefetch" href="/assets/js/121.7673e3f3.js"><link rel="prefetch" href="/assets/js/122.1e8fabb6.js"><link rel="prefetch" href="/assets/js/123.06f7f0f2.js"><link rel="prefetch" href="/assets/js/124.b3daa8a6.js"><link rel="prefetch" href="/assets/js/125.135a0a32.js"><link rel="prefetch" href="/assets/js/126.668baf73.js"><link rel="prefetch" href="/assets/js/127.d06caf84.js"><link rel="prefetch" href="/assets/js/128.70067fc3.js"><link rel="prefetch" href="/assets/js/13.3c51ec96.js"><link rel="prefetch" href="/assets/js/14.215b743d.js"><link rel="prefetch" href="/assets/js/15.ac327dcc.js"><link rel="prefetch" href="/assets/js/16.3f539031.js"><link rel="prefetch" href="/assets/js/17.327c325c.js"><link rel="prefetch" href="/assets/js/18.4ca43f25.js"><link rel="prefetch" href="/assets/js/19.598f91ab.js"><link rel="prefetch" href="/assets/js/20.62457730.js"><link rel="prefetch" href="/assets/js/21.1af94adb.js"><link rel="prefetch" href="/assets/js/22.87b90f5d.js"><link rel="prefetch" href="/assets/js/23.e8ad7658.js"><link rel="prefetch" href="/assets/js/24.8128f673.js"><link rel="prefetch" href="/assets/js/25.dc43051a.js"><link rel="prefetch" href="/assets/js/26.44788433.js"><link rel="prefetch" href="/assets/js/27.e3f7fb93.js"><link rel="prefetch" href="/assets/js/28.b8e00552.js"><link rel="prefetch" href="/assets/js/29.31f5d513.js"><link rel="prefetch" href="/assets/js/30.1b694b70.js"><link rel="prefetch" href="/assets/js/31.2f498c30.js"><link rel="prefetch" href="/assets/js/32.7acf83b4.js"><link rel="prefetch" href="/assets/js/33.095627b0.js"><link rel="prefetch" href="/assets/js/34.857b4e86.js"><link rel="prefetch" href="/assets/js/35.da7e9bde.js"><link rel="prefetch" href="/assets/js/36.cb1b2f62.js"><link rel="prefetch" href="/assets/js/37.3c025e70.js"><link rel="prefetch" href="/assets/js/38.4d4792fa.js"><link rel="prefetch" href="/assets/js/39.4746bc71.js"><link rel="prefetch" href="/assets/js/4.0936329b.js"><link rel="prefetch" href="/assets/js/40.0a3f3d42.js"><link rel="prefetch" href="/assets/js/41.9eff1de1.js"><link rel="prefetch" href="/assets/js/43.15c77eb7.js"><link rel="prefetch" href="/assets/js/44.0a4efc07.js"><link rel="prefetch" href="/assets/js/45.05fc10c4.js"><link rel="prefetch" href="/assets/js/46.f899e23b.js"><link rel="prefetch" href="/assets/js/47.75b958dc.js"><link rel="prefetch" href="/assets/js/48.bf3b7231.js"><link rel="prefetch" href="/assets/js/49.a9165223.js"><link rel="prefetch" href="/assets/js/5.6b657563.js"><link rel="prefetch" href="/assets/js/50.020a8d9a.js"><link rel="prefetch" href="/assets/js/51.82cfc10c.js"><link rel="prefetch" href="/assets/js/52.8f800115.js"><link rel="prefetch" href="/assets/js/53.1ab38117.js"><link rel="prefetch" href="/assets/js/54.4b8e72f3.js"><link rel="prefetch" href="/assets/js/55.610b19cb.js"><link rel="prefetch" href="/assets/js/56.50becf48.js"><link rel="prefetch" href="/assets/js/57.e3cb2362.js"><link rel="prefetch" href="/assets/js/58.79e55b30.js"><link rel="prefetch" href="/assets/js/59.6310a332.js"><link rel="prefetch" href="/assets/js/60.71c5a435.js"><link rel="prefetch" href="/assets/js/61.eadc1cdc.js"><link rel="prefetch" href="/assets/js/62.f54fdfa1.js"><link rel="prefetch" href="/assets/js/63.e4029dee.js"><link rel="prefetch" href="/assets/js/64.03e895fc.js"><link rel="prefetch" href="/assets/js/65.51c30949.js"><link rel="prefetch" href="/assets/js/66.a54c2419.js"><link rel="prefetch" href="/assets/js/67.de31ae21.js"><link rel="prefetch" href="/assets/js/68.3d58a16e.js"><link rel="prefetch" href="/assets/js/69.8be8610a.js"><link rel="prefetch" href="/assets/js/70.f0613e30.js"><link rel="prefetch" href="/assets/js/71.0ab14a83.js"><link rel="prefetch" href="/assets/js/72.103b338c.js"><link rel="prefetch" href="/assets/js/73.88f2dd73.js"><link rel="prefetch" href="/assets/js/74.f916ad51.js"><link rel="prefetch" href="/assets/js/75.02f33ee5.js"><link rel="prefetch" href="/assets/js/76.ee8a5e6a.js"><link rel="prefetch" href="/assets/js/77.a43c5a93.js"><link rel="prefetch" href="/assets/js/78.d82b2f71.js"><link rel="prefetch" href="/assets/js/79.6b931bd2.js"><link rel="prefetch" href="/assets/js/8.6c2a591e.js"><link rel="prefetch" href="/assets/js/80.97631c2e.js"><link rel="prefetch" href="/assets/js/81.11e80f65.js"><link rel="prefetch" href="/assets/js/82.a7ff4eb0.js"><link rel="prefetch" href="/assets/js/83.e77e2bd1.js"><link rel="prefetch" href="/assets/js/84.2c277d3f.js"><link rel="prefetch" href="/assets/js/85.dfd1c4db.js"><link rel="prefetch" href="/assets/js/86.d7e1c664.js"><link rel="prefetch" href="/assets/js/87.b398fab6.js"><link rel="prefetch" href="/assets/js/88.84c6fe22.js"><link rel="prefetch" href="/assets/js/89.30261686.js"><link rel="prefetch" href="/assets/js/9.e42fbba9.js"><link rel="prefetch" href="/assets/js/90.b4079eac.js"><link rel="prefetch" href="/assets/js/91.547615ea.js"><link rel="prefetch" href="/assets/js/92.dfd9434c.js"><link rel="prefetch" href="/assets/js/93.5fc378a5.js"><link rel="prefetch" href="/assets/js/94.d33bc49e.js"><link rel="prefetch" href="/assets/js/95.d4b43345.js"><link rel="prefetch" href="/assets/js/96.deee15c6.js"><link rel="prefetch" href="/assets/js/97.34a700ce.js"><link rel="prefetch" href="/assets/js/98.2d36f031.js"><link rel="prefetch" href="/assets/js/99.249f9a3c.js"><link rel="prefetch" href="/assets/js/vendors~flowchart.861c9f2e.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d4e4a38f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Jack's Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Learn" class="dropdown-title"><span class="title">Learn</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/learn/Papers/" class="nav-link">
+  Papers
+</a></li><li class="dropdown-item"><!----> <a href="/learn/English/" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/learn/Japanese/" class="nav-link">
+  Japanese
+</a></li><li class="dropdown-item"><!----> <a href="/learn/IRL/" class="nav-link">
+  IRL
+</a></li><li class="dropdown-item"><!----> <a href="/learn/Tools/" class="nav-link router-link-active">
+  Tools
+</a></li><li class="dropdown-item"><!----> <a href="/learn/Javascript/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/learn/Docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/learn/A_Global_History/" class="nav-link">
+  History
+</a></li><li class="dropdown-item"><!----> <a href="/learn/Condensed_Matter_Physics/" class="nav-link">
+  Condensed Matter Physics
+</a></li><li class="dropdown-item"><!----> <a href="/learn/Math/" class="nav-link">
+  Math
+</a></li></ul></div></div><div class="nav-item"><a href="/solve/" class="nav-link">
+  Solve
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Dreams" class="dropdown-title"><span class="title">Dreams</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/dream/tutorial/" class="nav-link">
+  Tutorial
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">
+  About
+</a></div> <a href="https://github.com/HuangJiaLian/HuangJiaLian_Code" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Learn" class="dropdown-title"><span class="title">Learn</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/learn/Papers/" class="nav-link">
+  Papers
+</a></li><li class="dropdown-item"><!----> <a href="/learn/English/" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/learn/Japanese/" class="nav-link">
+  Japanese
+</a></li><li class="dropdown-item"><!----> <a href="/learn/IRL/" class="nav-link">
+  IRL
+</a></li><li class="dropdown-item"><!----> <a href="/learn/Tools/" class="nav-link router-link-active">
+  Tools
+</a></li><li class="dropdown-item"><!----> <a href="/learn/Javascript/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/learn/Docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/learn/A_Global_History/" class="nav-link">
+  History
+</a></li><li class="dropdown-item"><!----> <a href="/learn/Condensed_Matter_Physics/" class="nav-link">
+  Condensed Matter Physics
+</a></li><li class="dropdown-item"><!----> <a href="/learn/Math/" class="nav-link">
+  Math
+</a></li></ul></div></div><div class="nav-item"><a href="/solve/" class="nav-link">
+  Solve
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Dreams" class="dropdown-title"><span class="title">Dreams</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/dream/tutorial/" class="nav-link">
+  Tutorial
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">
+  About
+</a></div> <a href="https://github.com/HuangJiaLian/HuangJiaLian_Code" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/learn/Tools/" class="sidebar-link">Tools</a></li><li><a href="/learn/Tools/how_to_draw_flowchart_in_Vuepress.html" class="sidebar-link">How to draw flowchart in Vuepress?</a></li><li><a href="/learn/Tools/how_to_import_to_anki_from_csv.html" class="active sidebar-link">How to import to Anki from CSV file？</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/learn/Tools/how_to_import_to_anki_from_csv.html#start-install-pdftotext" class="sidebar-link">Start: Install pdftotext</a></li><li class="sidebar-sub-header"><a href="/learn/Tools/how_to_import_to_anki_from_csv.html#extract-text-from-pdf" class="sidebar-link">Extract text from PDF</a></li><li class="sidebar-sub-header"><a href="/learn/Tools/how_to_import_to_anki_from_csv.html#split-the-text-and-save-a-csv-file" class="sidebar-link">Split the text and save a CSV file</a></li><li class="sidebar-sub-header"><a href="/learn/Tools/how_to_import_to_anki_from_csv.html#import-the-csv-file-to-anki" class="sidebar-link">Import the CSV file to Anki</a></li></ul></li><li><a href="/learn/Tools/how_to_use_mac.html" class="sidebar-link">How to use Mac efficiently?</a></li><li><a href="/learn/Tools/how_to_use_filezilla.html" class="sidebar-link">How to use FileZilla</a></li><li><a href="/learn/Tools/how_to_use_vscode.html" class="sidebar-link">How to use vscode?</a></li><li><a href="/learn/Tools/how_to_dictionary_in_mac.html" class="sidebar-link">How to use dictionary in Mac?</a></li><li><a href="/learn/Tools/how_to_use_ssr.html" class="sidebar-link">How to use SSR?</a></li><li><a href="/learn/Tools/how_set_email_in_calibre.html" class="sidebar-link">How to set Email in Calibre</a></li><li><a href="/learn/Tools/how_to_flash_original_android.html" class="sidebar-link">How to flash original android completely on Mac?</a></li><li><a href="/learn/Tools/how_to_draw_in_vuepress.html" class="sidebar-link">How to draw in Vuepress?</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="how-to-import-to-anki-from-csv-file？"><a href="#how-to-import-to-anki-from-csv-file？" class="header-anchor">#</a> How to import to Anki from CSV file？</h1> <p></p><div class="table-of-contents"><ul><li><a href="#how-to-import-to-anki-from-csv-file？">How to import to Anki from CSV file？</a><ul><li><a href="#start-install-pdftotext">Start: Install pdftotext</a></li><li><a href="#extract-text-from-pdf">Extract text from PDF</a></li><li><a href="#split-the-text-and-save-a-csv-file">Split the text and save a CSV file</a></li><li><a href="#import-the-csv-file-to-anki">Import the CSV file to Anki</a></li></ul></li></ul></div><p></p> <p>The year before last, I made a repository called <a href="https://github.com/HuangJiaLian/BulkImportToAnki" target="_blank" rel="noopener noreferrer">BulkImportToAnki<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>
+on Github. Until tody, I found there was a <a href="https://github.com/HuangJiaLian/BulkImportToAnki/issues/1" target="_blank" rel="noopener noreferrer">issue<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>
+opened on Dec 22 2018. I'm very sorry for I didn't notice this, and sorry for I
+didn't write any documents about this repository. So this is the reason I write
+this article.</p> <p>Long long time ago, I got a PDF file， which contains 100 sentences for IELTS from my
+classmate. I didn't think that's a good idea to memorize all this by reading this file directly.</p> <p>I knew <a href="https://apps.ankiweb.net/#download" target="_blank" rel="noopener noreferrer">Anki<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> is good for memorizing.
+But how to convert this PDF to cards thatsupport in Anki?
+Here was a solution I discovered:</p> <div class="vuepress-flowchart loading"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 30 30" class="vuepress-flowchart-loading-icon" style="enable-background:new 0 0 50 50;"><rect x="0" y="13" width="4" height="5"><animate attributeName="height" attributeType="XML" values="5;21;5" begin="0s" dur="0.6s" repeatCount="indefinite"></animate> <animate attributeName="y" attributeType="XML" values="13; 5; 13" begin="0s" dur="0.6s" repeatCount="indefinite"></animate></rect> <rect x="10" y="13" width="4" height="5"><animate attributeName="height" attributeType="XML" values="5;21;5" begin="0.15s" dur="0.6s" repeatCount="indefinite"></animate> <animate attributeName="y" attributeType="XML" values="13; 5; 13" begin="0.15s" dur="0.6s" repeatCount="indefinite"></animate></rect> <rect x="20" y="13" width="4" height="5"><animate attributeName="height" attributeType="XML" values="5;21;5" begin="0.3s" dur="0.6s" repeatCount="indefinite"></animate> <animate attributeName="y" attributeType="XML" values="13; 5; 13" begin="0.3s" dur="0.6s" repeatCount="indefinite"></animate></rect></svg></div><h2 id="start-install-pdftotext"><a href="#start-install-pdftotext" class="header-anchor">#</a> Start: Install pdftotext</h2> <p>I decided to use Python to deal with this. I followed <a href="https://pypi.org/project/pdftotext/" target="_blank" rel="noopener noreferrer">this<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>,
+and installed <code>pdftotext</code>, which can extract text from PDF file.</p> <h2 id="extract-text-from-pdf"><a href="#extract-text-from-pdf" class="header-anchor">#</a> Extract text from PDF</h2> <p>I could extract text from my pdf file by using:</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token keyword">import</span> pdftotext
+
+<span class="token comment"># Load your PDF</span>
+<span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">&quot;100_sentences.pdf&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;rb&quot;</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
+    pdf <span class="token operator">=</span> pdftotext<span class="token punctuation">.</span>PDF<span class="token punctuation">(</span>f<span class="token punctuation">)</span>
+
+<span class="token comment"># Iterate over all the pages</span>
+pages <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token keyword">for</span> page <span class="token keyword">in</span> pdf<span class="token punctuation">:</span>
+    pages<span class="token punctuation">.</span>append<span class="token punctuation">(</span>page<span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>pages<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>pages<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><details class="custom-block details"><summary>Output</summary> <div class="language- line-numbers-mode"><pre class="language-text"><code>               7000 雅思词汇用 100 个句子记完！
+100 套真题中提炼而出的 100 百个经典句子，包涵了 7000 个雅思词汇。
+1. Typical of the grassland dwellers of the continent is the American antelope, or
+pronghorn.
+1.美洲羚羊，或称叉角羚，是该大陆典型的草原动物。
+2. Of the millions who saw Haley’s comet in 1986, how many people will live long
+enough to see it return in the twenty-first century.
+2. 1986 年看见哈雷慧星的千百万人当中，有多少人能够长寿到足以目睹它在二十一世纪
+的回归呢？
+3. Anthropologists have discovered that fear, happiness, sadness, and surprise
+are universally reflected in facial expressions.
+3.人类学家们已经发现，恐惧，快乐，悲伤和惊奇都会行之于色，这在全人类是共通的。
+4. Because of its irritating effect on humans, the use of phenol as a general
+antiseptic has been largely discontinued.
+4.由于苯酚对人体带有刺激性作用，它基本上已不再被当作常用的防腐剂了。
+5. In group to remain in existence, a profit-making organization must, in the
+long run, produce something consumers consider useful or desirable.
+5.任何盈利组织若要生存，最终都必须生产出消费者可用或需要的产品。
+6. The greater the population there is in a locality; the greater the need there is
+for water, transportation, and disposal of refuse.
+6.一个地方的人口越多，其对水，交通和垃圾处理的需求就会越大。
+7. It is more difficult to write simply, directly, and effectively than to employ
+flowery but vague expressions that only obscure one’s meaning.
+7.简明，直接，有力的写作难于花哨，含混而意义模糊的表达。
+                                         1 / 16
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>8. With modern offices becoming more mechanized, designers are attempting
+to personalize them with warmer, less severe interiors.
+8.随着现代办公室的日益自动化，设计师们正试图利用较为温暖而不太严肃的内部装饰来使
+其具有亲切感。
+9. The difference between libel and slander is that libel is printed while slander
+is spoken.
+9.诽谤和流言的区别在于前者是书面的，而后者是口头的。
+10. The knee is the joints where the thigh bone meets the large bone of the
+lower leg.
+10.膝盖是大腿骨和小腿胫的连接处。
+11. Acids are chemical compounds that, in water solution, have a sharp taste, a
+corrosive action on metals, and the ability to turn certain blue vegetable dyes
+red.
+11.酸是一种化合物，它在溶于水时具有强烈的气味和对金属的腐蚀性，并且能够使某些蓝
+色植物染料变红。
+12. Billie Holiday’s reputation as a great jazz-blues singer rests on her ability to
+give emotional depth to her songs.
+12. Billie Holiday’s 作为一个爵士布鲁斯乐杰出歌手的名声建立在能够赋予歌曲感情深度
+的能力。
+13. Essentially, a theory is an abstract, symbolic representation of what is
+conceived to be reality.
+13.理论在本质上是对认识了的现实的一种抽象和符号化的表达。
+14. Long before children are able to speak or understand a language, they
+communicate through facial expressions and by making noises.
+14.儿童在能说或能听懂语言之前，很久就会通过面部表情和靠发出噪声来与人交流了。
+                                        2 / 16
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div></details> <p>Here came to the question:</p> <div class="custom-block tip"><p class="custom-block-title">How to get the information I need?</p> <ol><li>I need all those pair sentences of Chinese and English.</li> <li>I don't need
+<ul><li>the first two lines at the begin in the first pages.</li> <li>the numbers on the foot of each page like '1 / 16, 2 / 16'.</li></ul></li></ol></div> <h2 id="split-the-text-and-save-a-csv-file"><a href="#split-the-text-and-save-a-csv-file" class="header-anchor">#</a> Split the text and save a CSV file</h2> <details class="custom-block details"><summary>All code</summary> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token keyword">import</span> pdftotext
+
+<span class="token comment"># Load your PDF</span>
+<span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">&quot;100_sentences.pdf&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;rb&quot;</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
+    pdf <span class="token operator">=</span> pdftotext<span class="token punctuation">.</span>PDF<span class="token punctuation">(</span>f<span class="token punctuation">)</span>
+
+<span class="token comment"># Iterate over all the pages</span>
+pages <span class="token operator">=</span> <span class="token string">''</span>
+<span class="token keyword">for</span> page <span class="token keyword">in</span> pdf<span class="token punctuation">:</span>
+    <span class="token comment"># Remove page number</span>
+    page <span class="token operator">=</span> page<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token operator">-</span><span class="token number">10</span><span class="token punctuation">]</span>
+    <span class="token comment"># Remove all '\n' and extra space</span>
+    page <span class="token operator">=</span> page<span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">'\n'</span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">.</span>strip<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    pages <span class="token operator">+=</span> page
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>pages<span class="token punctuation">)</span>
+
+<span class="token keyword">import</span> re 
+text <span class="token operator">=</span> re<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">'[0-9]+\.'</span><span class="token punctuation">,</span> pages<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>text<span class="token punctuation">)</span>
+
+
+pairs_list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+counter <span class="token operator">=</span> <span class="token number">0</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>text<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token comment"># print(sentence[i])</span>
+    <span class="token keyword">if</span> i<span class="token operator">%</span><span class="token number">2</span> <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">:</span>
+        <span class="token comment"># pairs_list.append((li[i-1].replace('\n',''),li[i].replace('\n','')))</span>
+        pairs_list<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token punctuation">(</span>text<span class="token punctuation">[</span>i<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span>text<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    counter <span class="token operator">+=</span><span class="token number">1</span> 
+
+<span class="token keyword">for</span> pair <span class="token keyword">in</span> pairs_list<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>pair<span class="token punctuation">,</span><span class="token string">'\n'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd 
+df <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>pairs_list<span class="token punctuation">,</span>columns<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'Front'</span><span class="token punctuation">,</span><span class="token string">'Back'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token comment"># print(df)</span>
+df<span class="token punctuation">.</span>to_csv<span class="token punctuation">(</span><span class="token string">'DataExportToAnki.csv'</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span>
+<span class="token comment"># It's not elegant I knew, but it worked.</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br></div></div></details> <p>So that , I converted the PDF to a csv file, which could be import to Anki easily.</p> <h2 id="import-the-csv-file-to-anki"><a href="#import-the-csv-file-to-anki" class="header-anchor">#</a> Import the CSV file to Anki</h2> <p>In my computer, I opened <code>Anki-&gt; File -&gt; Import</code>, and then chose the csv file I made.
+Because the first colum was number field, so I ignored Field 1.
+<figure align="center"><img src="https://raw.githubusercontent.com/HuangJiaLian/DataBase0/master/uPic/BWmHqE.jpg" width="70%" alt> <figcaption><i><small><small>Import csv to Anki</small></small></i></figcaption></figure></p> <p>I'm not sure whether or not a csv file could be imported to the mobile Anki directly.
+Even so, you can export a package using <code>Anki-&gt; File -&gt; Export</code>, and import to your phone.</p> <p>Thank for reading.  If you have any questions, leave comments below.</p> <div id="lv-container" data-id="city" data-uid="MTAyMC80ODk4NC8yNTQ3OA=="></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/learn/Tools/how_to_draw_flowchart_in_Vuepress.html" class="prev">
+        How to draw flowchart in Vuepress?
+      </a></span> <span class="next"><a href="/learn/Tools/how_to_use_mac.html">
+        How to use Mac efficiently?
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.aef505b2.js" defer></script><script src="/assets/js/3.dbd3da8d.js" defer></script><script src="/assets/js/42.8c852756.js" defer></script><script src="/assets/js/6.a17fb6d6.js" defer></script><script src="/assets/js/7.eae8a930.js" defer></script>
+  </body>
+</html>

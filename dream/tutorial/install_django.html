@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Install Django | Jack&#39;s Blog</title>
+    <meta name="description" content=" ">
+    <meta name="generator" content="VuePress 1.3.1">
+    <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/github-markdown-css/2.2.1/github-markdown.css">
+    
+    <link rel="preload" href="/assets/css/0.styles.d4e4a38f.css" as="style"><link rel="preload" href="/assets/js/app.aef505b2.js" as="script"><link rel="preload" href="/assets/js/3.dbd3da8d.js" as="script"><link rel="preload" href="/assets/js/14.215b743d.js" as="script"><link rel="prefetch" href="/assets/js/10.2de90f98.js"><link rel="prefetch" href="/assets/js/100.b7dd9a80.js"><link rel="prefetch" href="/assets/js/101.0f47485c.js"><link rel="prefetch" href="/assets/js/102.7146a69c.js"><link rel="prefetch" href="/assets/js/103.6d5e2b0b.js"><link rel="prefetch" href="/assets/js/104.9194288d.js"><link rel="prefetch" href="/assets/js/105.84f699d0.js"><link rel="prefetch" href="/assets/js/106.8507fccc.js"><link rel="prefetch" href="/assets/js/107.aca9c52c.js"><link rel="prefetch" href="/assets/js/108.9e860b75.js"><link rel="prefetch" href="/assets/js/109.c18312a7.js"><link rel="prefetch" href="/assets/js/11.3e4275c0.js"><link rel="prefetch" href="/assets/js/110.dced683c.js"><link rel="prefetch" href="/assets/js/111.e1037020.js"><link rel="prefetch" href="/assets/js/112.fc6f9a48.js"><link rel="prefetch" href="/assets/js/113.241eaf0c.js"><link rel="prefetch" href="/assets/js/114.928668b7.js"><link rel="prefetch" href="/assets/js/115.7ea18f56.js"><link rel="prefetch" href="/assets/js/116.cc16a4e4.js"><link rel="prefetch" href="/assets/js/117.e283475a.js"><link rel="prefetch" href="/assets/js/118.c67c5853.js"><link rel="prefetch" href="/assets/js/119.7f136d58.js"><link rel="prefetch" href="/assets/js/12.e0af2809.js"><link rel="prefetch" href="/assets/js/120.99998981.js"><link rel="prefetch" href="/assets/js/121.7673e3f3.js"><link rel="prefetch" href="/assets/js/122.1e8fabb6.js"><link rel="prefetch" href="/assets/js/123.06f7f0f2.js"><link rel="prefetch" href="/assets/js/124.b3daa8a6.js"><link rel="prefetch" href="/assets/js/125.135a0a32.js"><link rel="prefetch" href="/assets/js/126.668baf73.js"><link rel="prefetch" href="/assets/js/127.d06caf84.js"><link rel="prefetch" href="/assets/js/128.70067fc3.js"><link rel="prefetch" href="/assets/js/13.3c51ec96.js"><link rel="prefetch" href="/assets/js/15.ac327dcc.js"><link rel="prefetch" href="/assets/js/16.3f539031.js"><link rel="prefetch" href="/assets/js/17.327c325c.js"><link rel="prefetch" href="/assets/js/18.4ca43f25.js"><link rel="prefetch" href="/assets/js/19.598f91ab.js"><link rel="prefetch" href="/assets/js/20.62457730.js"><link rel="prefetch" href="/assets/js/21.1af94adb.js"><link rel="prefetch" href="/assets/js/22.87b90f5d.js"><link rel="prefetch" href="/assets/js/23.e8ad7658.js"><link rel="prefetch" href="/assets/js/24.8128f673.js"><link rel="prefetch" href="/assets/js/25.dc43051a.js"><link rel="prefetch" href="/assets/js/26.44788433.js"><link rel="prefetch" href="/assets/js/27.e3f7fb93.js"><link rel="prefetch" href="/assets/js/28.b8e00552.js"><link rel="prefetch" href="/assets/js/29.31f5d513.js"><link rel="prefetch" href="/assets/js/30.1b694b70.js"><link rel="prefetch" href="/assets/js/31.2f498c30.js"><link rel="prefetch" href="/assets/js/32.7acf83b4.js"><link rel="prefetch" href="/assets/js/33.095627b0.js"><link rel="prefetch" href="/assets/js/34.857b4e86.js"><link rel="prefetch" href="/assets/js/35.da7e9bde.js"><link rel="prefetch" href="/assets/js/36.cb1b2f62.js"><link rel="prefetch" href="/assets/js/37.3c025e70.js"><link rel="prefetch" href="/assets/js/38.4d4792fa.js"><link rel="prefetch" href="/assets/js/39.4746bc71.js"><link rel="prefetch" href="/assets/js/4.0936329b.js"><link rel="prefetch" href="/assets/js/40.0a3f3d42.js"><link rel="prefetch" href="/assets/js/41.9eff1de1.js"><link rel="prefetch" href="/assets/js/42.8c852756.js"><link rel="prefetch" href="/assets/js/43.15c77eb7.js"><link rel="prefetch" href="/assets/js/44.0a4efc07.js"><link rel="prefetch" href="/assets/js/45.05fc10c4.js"><link rel="prefetch" href="/assets/js/46.f899e23b.js"><link rel="prefetch" href="/assets/js/47.75b958dc.js"><link rel="prefetch" href="/assets/js/48.bf3b7231.js"><link rel="prefetch" href="/assets/js/49.a9165223.js"><link rel="prefetch" href="/assets/js/5.6b657563.js"><link rel="prefetch" href="/assets/js/50.020a8d9a.js"><link rel="prefetch" href="/assets/js/51.82cfc10c.js"><link rel="prefetch" href="/assets/js/52.8f800115.js"><link rel="prefetch" href="/assets/js/53.1ab38117.js"><link rel="prefetch" href="/assets/js/54.4b8e72f3.js"><link rel="prefetch" href="/assets/js/55.610b19cb.js"><link rel="prefetch" href="/assets/js/56.50becf48.js"><link rel="prefetch" href="/assets/js/57.e3cb2362.js"><link rel="prefetch" href="/assets/js/58.79e55b30.js"><link rel="prefetch" href="/assets/js/59.6310a332.js"><link rel="prefetch" href="/assets/js/6.a17fb6d6.js"><link rel="prefetch" href="/assets/js/60.71c5a435.js"><link rel="prefetch" href="/assets/js/61.eadc1cdc.js"><link rel="prefetch" href="/assets/js/62.f54fdfa1.js"><link rel="prefetch" href="/assets/js/63.e4029dee.js"><link rel="prefetch" href="/assets/js/64.03e895fc.js"><link rel="prefetch" href="/assets/js/65.51c30949.js"><link rel="prefetch" href="/assets/js/66.a54c2419.js"><link rel="prefetch" href="/assets/js/67.de31ae21.js"><link rel="prefetch" href="/assets/js/68.3d58a16e.js"><link rel="prefetch" href="/assets/js/69.8be8610a.js"><link rel="prefetch" href="/assets/js/7.eae8a930.js"><link rel="prefetch" href="/assets/js/70.f0613e30.js"><link rel="prefetch" href="/assets/js/71.0ab14a83.js"><link rel="prefetch" href="/assets/js/72.103b338c.js"><link rel="prefetch" href="/assets/js/73.88f2dd73.js"><link rel="prefetch" href="/assets/js/74.f916ad51.js"><link rel="prefetch" href="/assets/js/75.02f33ee5.js"><link rel="prefetch" href="/assets/js/76.ee8a5e6a.js"><link rel="prefetch" href="/assets/js/77.a43c5a93.js"><link rel="prefetch" href="/assets/js/78.d82b2f71.js"><link rel="prefetch" href="/assets/js/79.6b931bd2.js"><link rel="prefetch" href="/assets/js/8.6c2a591e.js"><link rel="prefetch" href="/assets/js/80.97631c2e.js"><link rel="prefetch" href="/assets/js/81.11e80f65.js"><link rel="prefetch" href="/assets/js/82.a7ff4eb0.js"><link rel="prefetch" href="/assets/js/83.e77e2bd1.js"><link rel="prefetch" href="/assets/js/84.2c277d3f.js"><link rel="prefetch" href="/assets/js/85.dfd1c4db.js"><link rel="prefetch" href="/assets/js/86.d7e1c664.js"><link rel="prefetch" href="/assets/js/87.b398fab6.js"><link rel="prefetch" href="/assets/js/88.84c6fe22.js"><link rel="prefetch" href="/assets/js/89.30261686.js"><link rel="prefetch" href="/assets/js/9.e42fbba9.js"><link rel="prefetch" href="/assets/js/90.b4079eac.js"><link rel="prefetch" href="/assets/js/91.547615ea.js"><link rel="prefetch" href="/assets/js/92.dfd9434c.js"><link rel="prefetch" href="/assets/js/93.5fc378a5.js"><link rel="prefetch" href="/assets/js/94.d33bc49e.js"><link rel="prefetch" href="/assets/js/95.d4b43345.js"><link rel="prefetch" href="/assets/js/96.deee15c6.js"><link rel="prefetch" href="/assets/js/97.34a700ce.js"><link rel="prefetch" href="/assets/js/98.2d36f031.js"><link rel="prefetch" href="/assets/js/99.249f9a3c.js"><link rel="prefetch" href="/assets/js/vendors~flowchart.861c9f2e.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d4e4a38f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Jack's Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Learn" class="dropdown-title"><span class="title">Learn</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/learn/Papers/" class="nav-link">
+  Papers
+</a></li><li class="dropdown-item"><!----> <a href="/learn/English/" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/learn/Japanese/" class="nav-link">
+  Japanese
+</a></li><li class="dropdown-item"><!----> <a href="/learn/IRL/" class="nav-link">
+  IRL
+</a></li><li class="dropdown-item"><!----> <a href="/learn/Tools/" class="nav-link">
+  Tools
+</a></li><li class="dropdown-item"><!----> <a href="/learn/Javascript/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/learn/Docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/learn/A_Global_History/" class="nav-link">
+  History
+</a></li><li class="dropdown-item"><!----> <a href="/learn/Condensed_Matter_Physics/" class="nav-link">
+  Condensed Matter Physics
+</a></li><li class="dropdown-item"><!----> <a href="/learn/Math/" class="nav-link">
+  Math
+</a></li></ul></div></div><div class="nav-item"><a href="/solve/" class="nav-link">
+  Solve
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Dreams" class="dropdown-title"><span class="title">Dreams</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/dream/tutorial/" class="nav-link router-link-active">
+  Tutorial
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">
+  About
+</a></div> <a href="https://github.com/HuangJiaLian/HuangJiaLian_Code" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Learn" class="dropdown-title"><span class="title">Learn</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/learn/Papers/" class="nav-link">
+  Papers
+</a></li><li class="dropdown-item"><!----> <a href="/learn/English/" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/learn/Japanese/" class="nav-link">
+  Japanese
+</a></li><li class="dropdown-item"><!----> <a href="/learn/IRL/" class="nav-link">
+  IRL
+</a></li><li class="dropdown-item"><!----> <a href="/learn/Tools/" class="nav-link">
+  Tools
+</a></li><li class="dropdown-item"><!----> <a href="/learn/Javascript/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/learn/Docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/learn/A_Global_History/" class="nav-link">
+  History
+</a></li><li class="dropdown-item"><!----> <a href="/learn/Condensed_Matter_Physics/" class="nav-link">
+  Condensed Matter Physics
+</a></li><li class="dropdown-item"><!----> <a href="/learn/Math/" class="nav-link">
+  Math
+</a></li></ul></div></div><div class="nav-item"><a href="/solve/" class="nav-link">
+  Solve
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Dreams" class="dropdown-title"><span class="title">Dreams</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/dream/tutorial/" class="nav-link router-link-active">
+  Tutorial
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">
+  About
+</a></div> <a href="https://github.com/HuangJiaLian/HuangJiaLian_Code" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/dream/tutorial/" class="sidebar-link">My dreams</a></li><li><a href="/dream/tutorial/record_video.html" class="sidebar-link">Video recording</a></li><li><a href="/dream/tutorial/2020.html" class="sidebar-link">2020</a></li><li><a href="/dream/tutorial/install_django.html" class="active sidebar-link">Install Django</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/dream/tutorial/install_django.html#check-whether-it-works-or-not" class="sidebar-link">Check whether it works or not</a></li><li class="sidebar-sub-header"><a href="/dream/tutorial/install_django.html#creating-the-polls-app" class="sidebar-link">Creating the Polls app</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/dream/tutorial/install_django.html#create-a-app" class="sidebar-link">Create a app:</a></li><li class="sidebar-sub-header"><a href="/dream/tutorial/install_django.html#write-the-fist-view" class="sidebar-link">Write the fist  view</a></li></ul></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><div class="language-bash line-numbers-mode"><pre class="language-bash"><code>pip <span class="token function">install</span> Django
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code>python -m django --version
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>Change the decretory after installation.</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token builtin class-name">cd</span> learnDjango/
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>Initialize a new project.</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>django-admin startproject mysite
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>Then we got a new folder <code>mysite</code></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token builtin class-name">.</span>
+└── mysite
+    ├── manage.py
+    └── mysite
+        ├── __init__.py
+        ├── settings.py
+        ├── urls.py
+        └── wsgi.py
+
+<span class="token number">2</span> directories, <span class="token number">5</span> files
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>The outer mysite/ root directory is just a container for your project.
+Its name doesn’t matter to Django; you can rename it to anything you like.</p> <ul><li>manage.py: A command-line utility that lets you interact with this Django project in various ways. You can read all the details about manage.py in django-admin and manage.py.</li></ul> <p>The inner mysite/ directory is the <strong>actual</strong> Python package for your project. Its name is the Python package name you’ll need to use to import anything inside it (e.g. mysite.urls).</p> <ul><li>mysite/<strong>init</strong>.py: An empty file that tells Python that this directory should be considered a Python package. If you’re a Python beginner, read more about packages in the official Python docs.</li> <li>mysite/settings.py: Settings/configuration for this Django project. Django settings will tell you all about how settings work.</li> <li>mysite/urls.py: The URL declarations for this Django project; a “table of contents” of your Django-powered site. You can read more about URLs in URL dispatcher.
+mysite/wsgi.py: An entry-point for WSGI-compatible web servers to serve your project. See How to deploy with WSGI for more details.</li></ul> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>The project name should not be too spacial，For example: django (which will conflict with Django itself) or test (which conflicts with a built-in Python package).</p></div> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>Don't put your source code on server.</p></div> <h2 id="check-whether-it-works-or-not"><a href="#check-whether-it-works-or-not" class="header-anchor">#</a> Check whether it works or not</h2> <p>change to folder <code>mysite</code></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>python manage.py runserver
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code>Performing system checks<span class="token punctuation">..</span>.
+
+System check identified no issues <span class="token punctuation">(</span><span class="token number">0</span> silenced<span class="token punctuation">)</span>.
+
+You have unapplied migrations<span class="token punctuation">;</span> your app may not work properly <span class="token keyword">until</span> they are applied.
+Run <span class="token string">'python manage.py migrate'</span> to apply them.
+
+October <span class="token number">28</span>, <span class="token number">2019</span> - <span class="token number">15</span>:50:53
+Django version <span class="token number">2.2</span>, using settings <span class="token string">'mysite.settings'</span>
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>Ignore the warning about unapplied database migrations for now; we’ll deal with the database shortly.</p></div> <p>Open <a href="http://127.0.0.1:8000/" target="_blank" rel="noopener noreferrer">http://127.0.0.1:8000/ <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> to check the local website。</p> <p>Then we can get a very nice webpage:</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>The <span class="token function">install</span> worked successfully<span class="token operator">!</span> Congratulations<span class="token operator">!</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>We can specific the port</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>python manage.py runserver <span class="token number">8080</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>and change the IP address</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>python manage.py runserver <span class="token number">0</span>:8000
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></div> <p>Then, it's time to add some things to the webpage.</p> <h2 id="creating-the-polls-app"><a href="#creating-the-polls-app" class="header-anchor">#</a> Creating the Polls app</h2> <p>Django comes with a utility that automatically generates the basic directory structure of an app, so <strong>you can focus on writing code rather than creating directories.</strong></p> <div class="custom-block tip"><p class="custom-block-title">Projects vs. apps</p> <p>What’s the difference between a project and an app? An app is a Web application that does something – e.g., a Weblog system, a database of public records or a simple poll app. A project is a collection of configuration and apps for a particular website. A project can contain multiple apps. An app can be in multiple projects.</p></div> <h3 id="create-a-app"><a href="#create-a-app" class="header-anchor">#</a> Create a app:</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>python manage.py startapp polls
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code>├── db.sqlite3
+└── polls
+    ├── admin.py
+    ├── apps.py
+    ├── __init__.py
+    ├── migrations
+    │   └── __init__.py
+    ├── models.py
+    ├── tests.py
+    └── views.py
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>Your app is in <code>polls</code>.</p> <h3 id="write-the-fist-view"><a href="#write-the-fist-view" class="header-anchor">#</a> Write the fist  view</h3> <p>Edit <code>polls/views.py</code></p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token keyword">from</span> django<span class="token punctuation">.</span>http <span class="token keyword">import</span> HttpResponse
+<span class="token keyword">def</span> <span class="token function">index</span><span class="token punctuation">(</span>request<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> HttpResponse<span class="token punctuation">(</span><span class="token string">&quot;Hello, world. You're at the polls index.&quot;</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>Then you want to give it a url.</p> <p>To create a URLconf in the polls directory, create a file called <code>urls.py</code>. Your app directory should now look like:</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token builtin class-name">.</span>
+├── admin.py
+├── apps.py
+├── __init__.py
+├── migrations
+│   └── __init__.py
+├── models.py
+├── tests.py
+├── urls.py
+└── views.py
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>polls/urls.py:</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token keyword">from</span> django<span class="token punctuation">.</span>urls <span class="token keyword">import</span> path
+
+<span class="token keyword">from</span> <span class="token punctuation">.</span> <span class="token keyword">import</span> views
+
+urlpatterns <span class="token operator">=</span> <span class="token punctuation">[</span>
+    path<span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">,</span> views<span class="token punctuation">.</span>index<span class="token punctuation">,</span> name<span class="token operator">=</span><span class="token string">'index'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>Then above stuff is the url of the app, the we link this to the project url.
+mysite/urls.py:</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token keyword">from</span> django<span class="token punctuation">.</span>contrib <span class="token keyword">import</span> admin
+<span class="token keyword">from</span> django<span class="token punctuation">.</span>urls <span class="token keyword">import</span> path<span class="token punctuation">,</span> include
+
+urlpatterns <span class="token operator">=</span> <span class="token punctuation">[</span>
+    path<span class="token punctuation">(</span><span class="token string">'polls/'</span><span class="token punctuation">,</span> include<span class="token punctuation">(</span><span class="token string">'polls.urls'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    path<span class="token punctuation">(</span><span class="token string">'admin/'</span><span class="token punctuation">,</span> admin<span class="token punctuation">.</span>site<span class="token punctuation">.</span>urls<span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code>python manage.py runserver
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>Then go to this link,
+http://127.0.0.1:8000/polls/</p> <p>Congratulations, you finished this first part.</p> <p>Next time we will <a href="https://docs.djangoproject.com/en/2.2/intro/tutorial02/" target="_blank" rel="noopener noreferrer">configure_database<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>, see you.</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/dream/tutorial/2020.html" class="prev">
+        2020
+      </a></span> <!----></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.aef505b2.js" defer></script><script src="/assets/js/3.dbd3da8d.js" defer></script><script src="/assets/js/14.215b743d.js" defer></script>
+  </body>
+</html>
