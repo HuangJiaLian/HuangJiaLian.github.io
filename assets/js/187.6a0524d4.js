@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[187],{579:function(t,e,n){"use strict";n.r(e);var s=n(19),l=Object(s.a)({},(function(){var t=this.$createElement,e=this._self._c||t;return e("ContentSlotsDistributor",{attrs:{"slot-key":this.$parent.slotKey}},[e("p",[this._v("今天去學校了，去了學校的狀態都會比較好欸。明天要做一個報告。")])])}),[],!1,null,null,null);e.default=l.exports}}]);

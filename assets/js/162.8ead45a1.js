@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[162],{553:function(t,e,n){"use strict";n.r(e);var s=n(19),l=Object(s.a)({},(function(){var t=this.$createElement,e=this._self._c||t;return e("ContentSlotsDistributor",{attrs:{"slot-key":this.$parent.slotKey}},[e("p",[this._v("今天有点累，感谢快餐店的老板。感谢哥哥。感谢世界。原来喝酒不会让人忘记忧愁。")])])}),[],!1,null,null,null);e.default=l.exports}}]);
